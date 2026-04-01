@@ -21,9 +21,13 @@ Without Organization-level Cloud Asset Viewer permissions, it is impossible to s
    cd gcp-endpoint-scanner
    ```
 2. Setup environment
+   ```bash
    python3.12 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
    gcloud auth application-default login
+   ```
 3. Run script
+   ```bash
    python gcp_service_scanner.py
+   ```
